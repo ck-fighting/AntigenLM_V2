@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Data files (large)
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.zip
+
+# Model files
+*.pt
+*.pth
+*.bin
+*.safetensors
+saved_models/
+
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+LLM/
+Training/Data/
+Data/*.csv

@@ -1,0 +1,37 @@
+{
+    "base_model_name": "/home/dataset-local/AntigenLM_V2/LLM/esm2_650M",
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+        "query",
+        "key",
+        "value",
+        "out_proj"
+    ],
+    "modules_to_save": [
+        "lm_head"
+    ],
+    "kd_temperature": 2.0,
+    "lambda_mlm": 1.0,
+    "lambda_kd": 1.0,
+    "dataset": {
+        "csv_file": "/home/dataset-local/AntigenLM_V2/Training/Data/Antigen_all.csv",
+        "max_length": 1024,
+        "train_split_ratio": 0.95,
+        "mlm_probability": 0.20,
+        "epitope_bias": 0.80
+    },
+    "training": {
+        "output_dir": "/home/dataset-local/AntigenLM_V2/LLM/AntigenLM_2",
+        "num_train_epochs": 10,
+        "per_device_train_batch_size": 16,
+        "gradient_accumulation_steps": 2,
+        "learning_rate": 2.0e-4,
+        "weight_decay": 0.01,
+        "warmup_steps": 1000,
+        "logging_steps": 20,
+        "bf16": true,
+        "dataloader_num_workers": 4
+    }
+}
