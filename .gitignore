@@ -20,7 +20,8 @@ build/
 *.pth
 *.bin
 *.safetensors
-saved_models/
+trained_model/
+trained_model_test/
 
 
 # IDE
