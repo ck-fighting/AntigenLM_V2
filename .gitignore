@@ -14,6 +14,7 @@ build/
 *.pkl
 *.pickle
 *.zip
+*.pdb
 
 # Model files
 *.pt
@@ -22,6 +23,7 @@ build/
 *.safetensors
 trained_model/
 trained_model_test/
+asd/
 
 
 # IDE
@@ -35,3 +37,4 @@ Thumbs.db
 LLM/
 Training/Data/
 Data/*.csv
+ASD_ Antigen Specific Antibody Database/
