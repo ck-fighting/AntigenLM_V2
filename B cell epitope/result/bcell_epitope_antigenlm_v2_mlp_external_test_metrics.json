@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.7232209737827715,
+  "precision": 0.3730853391684901,
+  "recall": 0.6725838264299803,
+  "f1": 0.47994370161857847,
+  "mcc": 0.3369844631360218,
+  "auc": 0.7826854914233555,
+  "auc10": 0.22843938900697677,
+  "tp": 341,
+  "tn": 1590,
+  "fp": 573,
+  "fn": 166,
+  "num_sequences": 15,
+  "num_residues": 2670,
+  "truncated_sequences": 0,
+  "model_path": "/home/dataset-local/AntigenLM_V2/B cell epitope/trained_model/bcell_epitope_antigenlm_v2_mlp.pt",
+  "encoder_model_path": "/home/dataset-local/AntigenLM_V2/B cell epitope/trained_model/fine_tuned_encoder",
+  "best_epoch": 14,
+  "loss_name": "weighted_bce_focal",
+  "pos_weight": 6.653311015796631,
+  "focal_gamma": 2
+}
